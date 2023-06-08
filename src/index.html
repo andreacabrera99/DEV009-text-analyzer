@@ -7,7 +7,39 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+<header>
+  <h1>Analizador de texto</h1>
+</header>
+
+<body>
+<label for="texto">Ingrese texto</label>
+  <br>
+
+<textarea name="user-input"
+          rows="10" cols="50" placeholder="Escriba aquí...">
+</textarea>
+<br>
+<ul class="metricas">
+  <li> <div class="notebox"> Caracteres </div></li> 
+  <li> <div class="caracteres"> Caracteres sin espacio </div></li>
+  <li> <div class="palabras"> Palabras </div></li>
+  <li> <div class="numeros"> Números</div> </li>
+  <li> <div class="suma"> Suma números</div></li>
+  <li> <div class="promedio"> Promedio longitud</div></li>
+</ul>
+
+<button id="reset-button">
+    Limpiar métricas
+</button>
+
+<footer> 
+  <p><small>2023 ⎼ Andrea Marisol Cabrera Robles</small></p>
+</footer>
+
+</body>
+
 <body>
   <script src="index.js" type="module"></script>
+  <script src="style.css"></script>
 </body>
-</html>
+</html> 
