@@ -28,7 +28,7 @@ function textAnalyzer () {
    document.querySelector("#word-count").innerHTML = wordCount;
    document.querySelector("#character-count").innerHTML = characterCount;
    document.querySelector("#spaces-count").innerHTML = spacesCount;
-   document.querySelector("#number-count").innerHTML = numberCount;
+   document.querySelector("#numbers-count").innerHTML = numberCount;
    document.querySelector("#sum-count").innerHTML = numberSum;
    document.querySelector("#average").innerHTML = wordLength;
 }
