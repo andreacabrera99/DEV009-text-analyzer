@@ -14,7 +14,7 @@ label {
     align-items: center;
     justify-content: center;
 }
-[name="user-input"] {
+textarea[name="user-input"] {
     height: 200px;
     resize: none;
     display: block;
@@ -28,6 +28,7 @@ label {
     position: fixed;
     top: 170px;
     left: 10px;
+    background-color: #dcdbfa;
 }
 .count {
     background-color: #ffffff;
@@ -37,8 +38,8 @@ label {
     width: 15em;
     text-align: center;
     font: caption;
-    margin-bottom: 3px;
     margin-top: 3px;
+    margin-bottom: 3px;
   }
 #reset-button {
     border: 0;
