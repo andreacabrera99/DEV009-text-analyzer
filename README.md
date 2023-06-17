@@ -44,11 +44,11 @@ El listado de funcionalidades es el siguiente:
 ## 4. Organización del proyecto
 Dentro de una carpeta src se incluyen cuatro archivos: `index.html`, `styles.css`, `analyzer.js` y `index.js`, dentro de los cuales hay diferentes partes que permiten que el analizador de texto tenga estructura, funcionalidad y estilo.
 
-- **`index.html`**: archivo que es el punto de partida de la aplicación, el cual contiene el HTML del proyecto. Aquí se encuentran el `<header>` con el título Analizador de texto; el `<body>` que incluye un `<textarea>` para que la usuaria introduzca su texto, un `<ul>` que tienen 6 hijos `<li>` que muestran las métricas y un `<button>` con el valor de reset-button; y un `<footer>` que tiene un hijo <p> que muestra el nombre de la desarrolladora de la aplicación. Con un `<script>` se enlaza este archivo con los archivos de Javascript y CSS. 
+-**`index.html`**: archivo que es el punto de partida de la aplicación, el cual contiene el HTML del proyecto. Aquí se encuentran el `<header>` con el título Analizador de texto; el `<body>` que incluye un `<textarea>` para que la usuaria introduzca su texto, un `<ul>` que tienen 6 hijos `<li>` que muestran las métricas y un `<button>` con el valor de reset-button; y un `<footer>` que tiene un hijo <p> que muestra el nombre de la desarrolladora de la aplicación. Con un `<script>` se enlaza este archivo con los archivos de Javascript y CSS. 
 
-- **`styles.css`**: archivo con las reglas de estilo de la aplicación. Aquí se utilizan selectores de tipo, atributo, clase y ID para darle estilo a los elementos del archivo `index.html` con propiedades como las del modelo de la caja.
+-**`styles.css`**: archivo con las reglas de estilo de la aplicación. Aquí se utilizan selectores de tipo, atributo, clase y ID para darle estilo a los elementos del archivo `index.html` con propiedades como las del modelo de la caja.
 
-- **`analyzer.js`**: archivo de JavaScript con un objeto `analyzer`, el cual cuenta con seis métodos correspondientes a cada una de las métricas. Cada métrica incluye una función que retorna un conteo de las palabras, carácteres o números del parámetro `text` dentro de un `string`. 
+-**`analyzer.js`**: archivo de JavaScript con un objeto `analyzer`, el cual cuenta con seis métodos correspondientes a cada una de las métricas. Cada métrica incluye una función que retorna un conteo de las palabras, carácteres o números del parámetro `text` dentro de un `string`. 
 
 * analyzer.getWordCount(text)*: Este primer método utiliza `trim` para eliminar los espacios en blanco al inicio o al final, así como `split` para dividir la cadena en palabras. Al final retorna el conteo de las palabras con el método `length` y en caso de no haber palabras retorna 0. 
 
