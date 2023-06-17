@@ -50,17 +50,17 @@ Dentro de una carpeta src se incluyen cuatro archivos: `index.html`, `styles.css
 
 -**`analyzer.js`**: archivo de JavaScript con un objeto `analyzer`, el cual cuenta con seis métodos correspondientes a cada una de las métricas. Cada métrica incluye una función que retorna un conteo de las palabras, carácteres o números del parámetro `text` dentro de un `string`. 
 
-* analyzer.getWordCount(text)*: Este primer método utiliza `trim` para eliminar los espacios en blanco al inicio o al final, así como `split` para dividir la cadena en palabras. Al final retorna el conteo de las palabras con el método `length` y en caso de no haber palabras retorna 0. 
+* analyzer.getWordCount(text): Este primer método utiliza `trim` para eliminar los espacios en blanco al inicio o al final, así como `split` para dividir la cadena en palabras. Al final retorna el conteo de las palabras con el método `length` y en caso de no haber palabras retorna 0. 
 
-* analyzer.getCharacterCount(text)*: Esta función retorna `text.length`, donde `length` se usa para obtener el número de caracteres totales. 
+* analyzer.getCharacterCount(text): Esta función retorna `text.length`, donde `length` se usa para obtener el número de caracteres totales. 
 
-* analyzer.getCharacterCountExcludingSpaces(text)*: Esta función retorna `text.replace(/[^\w\s]|_/g, "").replace(/\s+/g, "").trim().length`, donde `replace` reemplaza las expresiones regulares por una cadena vacía y `trim` elimina cualquier espacio en blanco al inicio o al final. 
+* analyzer.getCharacterCountExcludingSpaces(text): Esta función retorna `text.replace(/[^\w\s]|_/g, "").replace(/\s+/g, "").trim().length`, donde `replace` reemplaza las expresiones regulares por una cadena vacía y `trim` elimina cualquier espacio en blanco al inicio o al final. 
 
-* analyzer.getNumberCount(text)*: Esta función devuelve todas las ocurrencias de números a través del uso de `text.match(reg)`, donde reg representa las expresiones regulares /\b\d+(\.\d+)?\b/g. Al final retorna el `length` del conteo de ocurrencias.
+* analyzer.getNumberCount(text): Esta función devuelve todas las ocurrencias de números a través del uso de `text.match(reg)`, donde reg representa las expresiones regulares /\b\d+(\.\d+)?\b/g. Al final retorna el `length` del conteo de ocurrencias.
 
-* analyzer.getNumberSum(text)*: Esta función parte del método usado en la función anterior para hallar las ocurrencias y retorna la suma de éstas con un bucle `for`.
+* analyzer.getNumberSum(text): Esta función parte del método usado en la función anterior para hallar las ocurrencias y retorna la suma de éstas con un bucle `for`.
 
-* analyzer.getAverageWordLength(text)*: Esta última función divide el texto en palabras con `split` y después usa un bucle `for` que suma la longitug de las palabras para luego dividirla entre la cantidad de palabras. Al final usa  `Math.round` para retornar el resultado total con dos decimales.
+* analyzer.getAverageWordLength(text): Esta última función divide el texto en palabras con `split` y después usa un bucle `for` que suma la longitug de las palabras para luego dividirla entre la cantidad de palabras. Al final usa  `Math.round` para retornar el resultado total con dos decimales.
 
 -**`index.js`**: este último archivo registra un `Event Listener` para escuchar el evento `keyup` del `<textarea>` para actualizar las métricas cuando se escriba en el cuadro de texto y otro para escuchar el evento `click` del `<button>` que limpia el contenido de la caja de texto. Dentro de estas funciones se utiliza el selector del DOM `querySelector` y el atributo de manipulación dinámica del DOM `innerHTML` para acceder a los elementos del archivo `index.html` .
 
